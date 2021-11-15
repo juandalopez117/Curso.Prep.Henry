@@ -1,0 +1,8 @@
+explicación de conceptos:
+
+- Variables: objetos que permiten almacenar cualquier tipo de dato en el ordenador, para poder usarla mas adelante.
+- Strings: son cadenas de caracteres planos, que van generalmente entre comillas.
+- Funciones: métodos que usa el ordenados para obtener nuevos datos a partir de un conjunto de datos que se le dan por entrada.
+    una función es como una maquina, que me transforma datos en datos nuevos. 
+- declaraciones if: son instrucciones que se le dan al ordenador para ejecutar una orden si se cumple una condición. 
+- Valores booleanos: son valores que me permiten decirle al ordenador si algo se cumple (true) o no (false). 
