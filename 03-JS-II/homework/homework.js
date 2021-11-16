@@ -5,12 +5,27 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+  if (x > y){
+    return x;
+  }
+  else if (y > x){
+    return y;
+  }
+  else{
+    return x;
+  }
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if (edad >= 18){
+    var Char = "Allowed";
+    return Char;
+  }
+  var a = 'Not allowed';
+  return a;
 }
   
 function conection(status) {
@@ -19,6 +34,18 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+  if (status === 1){
+    var A = 'Online';
+    return A;
+  }
+  else if (status == 2){
+    var B = 'Away';
+    return B;
+  }
+  else{
+    var C = 'Offline';
+    return C;
+  }
 }
 
 function saludo(idioma) {
@@ -28,8 +55,24 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
+  if (idioma === 'aleman'){
+    var A = 'Guten Tag!';
+    return A;
+  }
+  else if (idioma === 'mandarin'){
+    A = 'Ni Hao!';
+    return A;
+  }
+  else if (idioma === 'ingles'){
+    A = 'Hello!';
+    return A;
+  }
+  else if((idioma !== 'aleman' && idioma !== 'mandarin' 
+  && idioma !== 'ingles') || idioma === undefined){
+    A = 'Hola!';
+    return A;
+  }
 }
-
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
   //En caso que el color recibido sea "blue", devuleve --> "This is blue"
@@ -38,6 +81,15 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  if(color === 'blue' || color === 'red' || color === 'green'
+  || color === 'orange'){
+    var A = `This is ${color}`;
+    return A;
+  }
+  else{
+    A = 'Color not found';
+    return A;
+  }
 }
 
 function esDiezOCinco(numero) {
